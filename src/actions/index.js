@@ -20,8 +20,8 @@ export const fetchCharacters = () => {
         axios
           .get(`https://swapi.co/api/people/`)
           .then(res => {
-              console.log("logging from .then", res);
-              dispatch({ type: FETCHING_SUCCES, payload: res.data.result })
+              console.log("logging from .then");
+              dispatch({ type: FETCHING_SUCCES, payload: res.data.results })
             })
           .catch(err => {
               console.log("logging err", err);

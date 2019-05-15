@@ -1,4 +1,6 @@
 import { FETCHING_START, FETCHING_SUCCES, FETCHING_FAILURE } from "../actions";
+
+
 const initialState = {
   characters: [],
   fetching: false,
