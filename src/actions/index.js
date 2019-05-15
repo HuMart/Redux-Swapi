@@ -25,7 +25,7 @@ export const fetchCharacters = () => {
             })
           .catch(err => {
               console.log("logging err", err);
-              dispatch({ type: FETCHING_FAILURE, payload: "Err Characyers not found"});
+              dispatch({ type: FETCHING_FAILURE, payload: "Err Characters not found"});
         });
     };
 };
